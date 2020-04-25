@@ -1,17 +1,17 @@
 extends Area2D
 
-const speed = 3
+export(int) var speed = 150
 
 func _process(delta):
 	if Input.is_action_pressed("ui_right"):
-		move(speed, 0)
+		move(speed, 0, delta)
 	if Input.is_action_pressed("ui_left"):
-		move(-speed, 0)
+		move(-speed, 0, delta)
 	if Input.is_action_pressed("ui_up"):
-		move(0, -speed)
+		move(0, -speed, delta)
 	if Input.is_action_pressed("ui_down"):
-		move(0, speed)
+		move(0, speed, delta)
 
-func move(xspeed, yspeed):
-	position.x += xspeed
-	position.y += yspeed
+func move(xspeed, yspeed, delta):
+	position.x += xspeed * delta
+	position.y += yspeed * delta
