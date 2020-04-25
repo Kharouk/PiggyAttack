@@ -1,9 +1,11 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://Pig.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Apple.tscn" type="PackedScene" id=2]
+[ext_resource path="res://World.gd" type="Script" id=3]
 
 [node name="World" type="Node"]
+script = ExtResource( 3 )
 
 [node name="Background" type="ColorRect" parent="."]
 anchor_right = 1.0
@@ -49,3 +51,15 @@ position = Vector2( 167.894, 52.558 )
 
 [node name="Apple6" parent="." instance=ExtResource( 2 )]
 position = Vector2( 111.248, 21.8992 )
+
+[node name="Instructions" type="Label" parent="."]
+margin_left = 101.868
+margin_top = 152.578
+margin_right = 208.868
+margin_bottom = 166.578
+rect_pivot_offset = Vector2( 53, 0 )
+text = "Eat them apples."
+align = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
