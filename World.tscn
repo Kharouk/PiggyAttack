@@ -32,5 +32,20 @@ position = Vector2( 79.713, 124.095 )
 [node name="Apple5" parent="." instance=ExtResource( 2 )]
 position = Vector2( 31.8268, 55.4779 )
 
+[node name="Apple7" parent="." instance=ExtResource( 2 )]
+position = Vector2( 291.113, 63.6536 )
+
+[node name="Apple8" parent="." instance=ExtResource( 2 )]
+position = Vector2( 31.8268, 146.578 )
+
+[node name="Apple9" parent="." instance=ExtResource( 2 )]
+position = Vector2( 154.754, 129.059 )
+
+[node name="Apple10" parent="." instance=ExtResource( 2 )]
+position = Vector2( 106.868, 94.0205 )
+
+[node name="Apple11" parent="." instance=ExtResource( 2 )]
+position = Vector2( 167.894, 52.558 )
+
 [node name="Apple6" parent="." instance=ExtResource( 2 )]
 position = Vector2( 111.248, 21.8992 )

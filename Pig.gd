@@ -18,7 +18,7 @@ func _process(delta):
 		move(0, -speed, delta)
 	if Input.is_action_pressed("ui_down"):
 		move(0, speed, delta)
-		
+
 	if moving:
 		animationPlayer.play("Run")
 	else:
