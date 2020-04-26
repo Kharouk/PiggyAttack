@@ -63,3 +63,4 @@ align = 1
 __meta__ = {
 "_edit_use_anchors_": false
 }
+[connection signal="area_entered" from="Pig" to="." method="_on_Pig_area_entered"]
